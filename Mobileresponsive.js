@@ -6,7 +6,6 @@ function UIMobileversion() {
     if (!ref) return;
     var href = ref.getAttribute("href");
     if (window.innerHeight > window.innerWidth) {
-        // Passe en version mobile si ce n'est pas déjà le cas
         if (!href.startsWith("M")) {
             $(pcUI).hide();
             $(mobileUI).show();
@@ -16,7 +15,6 @@ function UIMobileversion() {
             $(mobileUI).show();
         }
     } else {
-        // Passe en version PC si ce n'est pas déjà le cas
         if (href.startsWith("M")) {
             ref.setAttribute("href", href.substring(1));
         }
