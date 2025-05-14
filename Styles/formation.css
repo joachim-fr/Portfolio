@@ -1,0 +1,59 @@
+.maincontainer {
+    display: inline;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h1, h2 {
+        position: relative;
+        font-family: Boldonse;
+        color: beige;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    p {
+        font-family: Boldonse;
+        color: beige;    
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .cal {
+        color: rgb(99, 221, 252);
+        animation: rainbow 2s steps(36) infinite;
+        z-index: 0;
+    }
+}
+
+.Mmaincontainer {
+    display: block;
+    margin-top: 40%;
+    text-align: center;
+
+    h1, h2 {
+        font-family: Boldonse;
+        color: beige;
+        text-align: center;
+        font-size: 300%;
+        margin-top: 10%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    p {
+        font-family: Boldonse;
+        color: beige;    
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: left;
+        font-size: 200%;
+    }
+
+    .cal {
+        color: rgb(99, 221, 252);
+        animation: rainbow 2s steps(36) infinite;
+        z-index: 0;
+    }
+}

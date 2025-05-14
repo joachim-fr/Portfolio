@@ -51,6 +51,10 @@ body {
         color: beige;
     }
 
+    div {
+        margin-top: 5%;
+    }
+
     .cal {
         color: rgb(99, 221, 252);
         animation: rainbow 2s steps(36) infinite;
