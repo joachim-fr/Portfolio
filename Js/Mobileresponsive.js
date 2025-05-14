@@ -3,20 +3,19 @@ let mobileUI = document.getElementById("MobileUI");
 
 function UIMobileversion() {
     var ref = document.getElementById("css");
-    if (!ref) return;
     var href = ref.getAttribute("href");
     if (window.innerHeight > window.innerWidth) {
-        if (!href.startsWith("M")) {
+        if (!href.startsWith("Styles/M")) {
             $(pcUI).hide();
             $(mobileUI).show();
-            ref.setAttribute("href", "M" + href);
+            ref.setAttribute("href", "Styles/" + "M" + href.slice(7));
         } else {
             $(pcUI).hide();
             $(mobileUI).show();
         }
     } else {
-        if (href.startsWith("M")) {
-            ref.setAttribute("href", href.substring(1));
+        if (href.startsWith("Styles/M")) {
+            ref.setAttribute("href", "Styles/" + href.slice(8));
         }
         $(pcUI).show();
         $(mobileUI).hide();

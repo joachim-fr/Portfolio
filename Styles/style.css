@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Boldonse";
+    src: url(../Assets/Boldonse-Regular.ttf) format("truetype");
+}
+
+html {
+    background-color: black
+}
+
+.header {
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+
+    .logo {
+        height: 100px;
+    }
+
+
+    a {
+        text-decoration: none;
+        font-family: Boldonse;
+        color: beige;
+    }
+
+    a:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.maincontainer {
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+
+    h1 {
+        font-family: Boldonse;
+        color: beige;
+    }
+
+    .cal {
+        color: rgb(99, 221, 252);
+        animation: rainbow 2s steps(36) infinite;
+        z-index: 0;
+    }
+
+    img {
+        max-width: 35%;
+        border-radius: 10px;
+    }
+}
+
+
+
+@keyframes rainbow {
+   from { filter:hue-rotate(10deg); }
+     to { filter:hue-rotate(360deg); }
+}
+
+@keyframes rainbow {
+ from {
+    filter:hue-rotate(10deg);
+            filter:hue-rotate(10deg);
+    }
+  to {
+    filter:hue-rotate(360deg);
+            filter:hue-rotate(360deg);
+    }
+}
