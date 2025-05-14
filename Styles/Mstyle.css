@@ -7,55 +7,38 @@ html {
     background-color: black
 }
 
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-.logo {
-    height: 500px;
+video {
+    position: absolute;
+    height: 200px;
+    left: 50%;
+    top: 120px;
+    transform: translate(-50%, -50%);
+}
+
+.maincontainer {
+    display: flex;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 300px;
-}
-
-.lienheader {
-    text-decoration: none;
-    font-family: Boldonse;
-    color: beige;
-}
-
-.containerlienh {
-    position: fixed;
-    right: 15%;
-}
-
-.header {
-    top: 0;
-    margin-bottom: 10%;
-    display: flex;
+    top: 50%;
     align-items: center;
-}
+    text-align: center;
+    white-space : nowrap;
+    h1 {
+        font-family: Boldonse;
+        color: beige;
+    }
 
-.PDP {
-    max-width: 25%;
-    right: 10%;
-    position: fixed;
-    border-radius: 10px;
-}
-
-.fcontainer {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-items: center;
-}
-
-.titles h1{
-    font-family: Boldonse;
-    color: beige;
-}
-
-.cal {
-    color: rgb(99, 221, 252);
-  animation: rainbow 2s steps(36) infinite;
+    .cal {
+        color: rgb(99, 221, 252);
+        animation: rainbow 2s steps(36) infinite;
+        z-index: 0;
+    }
 }
 
 @keyframes rainbow {
