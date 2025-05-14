@@ -16,7 +16,7 @@ video {
     position: absolute;
     height: 200px;
     left: 50%;
-    top: 120px;
+    top: 200px;
     transform: translate(-50%, -50%);
 }
 
